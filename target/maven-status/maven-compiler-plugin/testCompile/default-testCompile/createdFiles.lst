@@ -1,0 +1,6 @@
+com\fawry\ecommerce\ApplicationTest.class
+com\fawry\ecommerce\CartServiceTest.class
+com\fawry\ecommerce\ProductTest.class
+com\fawry\ecommerce\CartItemTest.class
+com\fawry\ecommerce\CheckoutServiceTest.class
+com\fawry\ecommerce\CustomerTest.class

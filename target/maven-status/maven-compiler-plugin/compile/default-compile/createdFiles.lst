@@ -1,0 +1,6 @@
+com\fawry\ecommerce\model\Product.class
+com\fawry\ecommerce\Application.class
+com\fawry\ecommerce\service\CartService.class
+com\fawry\ecommerce\service\CheckoutService.class
+com\fawry\ecommerce\model\CartItem.class
+com\fawry\ecommerce\model\Customer.class
