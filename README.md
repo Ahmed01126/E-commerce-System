@@ -1,9 +1,9 @@
-# Fawry E-Commerce System
+# Fawry mini e-commerce system
 
 A Java-based e-commerce platform demonstrating core OOP principles, cart management, and checkout functionality.
 
 ## Features
-- **Cart Service**: Add/remove items, quantity validation
+- **Cart Service**: Add items, quantity validation
 - **Checkout Service**: 
   - Calculate subtotals and shipping fees (30 EGP/kg)
   - Generate receipts and shipment notices
