@@ -16,6 +16,7 @@ A Java-based e-commerce platform demonstrating core OOP principles, cart managem
 - Maven (Dependency Management)
 
 ## Project Structure
+```
 src/
 ├── main/
 │ ├── java/com/fawry/ecommerce/
@@ -32,49 +33,54 @@ src/
 ├── ApplicationTest.java
 ├── CartServiceTest.java
 └── ...
+```
 
-## How to Run
-1. **Prerequisites**: JDK 17+, Maven
-2. **Build**: 
-   ```bash
-   mvn clean install
+## Installation
+1. Ensure JDK 17+ is installed
+2. Clone this repository
+3. Build with Maven:
+```bash
+mvn clean install
+```
 
-Run Tests:
+```Run Tests:
 mvn test
+```
 
 Key OOP Principles Demonstrated
-Encapsulation: Private fields with public getters/setters
 
-Inheritance: [Mention if used]
+# Example Usage
+```
+// Initialize services
+CartService cart = new CartService();
+Customer customer = new Customer("John", 1000.0);
 
-Polymorphism: [Mention if used]
+// Add products
+Product cheese = new Product("Cheese", 100.0, 10).setShippable(200); // 200g
+cart.addItem(cheese, 2);
 
-Abstraction: Service interfaces with implementation
+// Checkout
+new CheckoutService().checkout(customer, cart);
+```
+##Test Coverage
+35 passing tests covering:
 
-Test Coverage
-35 passing unit tests (100% core logic coverage)
+Cart operations (100%)
 
-Validates:
+Checkout scenarios (100%)
 
-Cart operations
+Edge cases (negative values, expired products)
 
-Checkout calculations
-
-Edge cases (empty cart, insufficient balance)
-
-# Sample Output
-** Shipment Notice **
-2x Cheese    400g
-1x Biscuits   700g
-Total weight: 1.1kg
-
-** Receipt **
-2x Cheese    200 EGP
-1x Biscuits   150 EGP
+##Output Samples
+Receipt:
+```
+2x Cheese    200.00 EGP
+1x Biscuits  150.00 EGP
 -------------------
-Subtotal:     350 EGP
-Shipping:      33 EGP
-Total:        383 EGP
+Subtotal:    350.00 EGP
+Shipping:     33.00 EGP
+Total:       383.00 EGP
+```
 
 
 ## Screenshot of the build process output
